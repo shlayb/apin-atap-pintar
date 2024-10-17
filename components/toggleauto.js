@@ -39,12 +39,12 @@ export default function ToggleAuto() {
   return (
     <div className="p-8">
       <button
-        className={`${modeAuto == 0 ? 'bg-slate-400 justify-start duration-300' : 'bg-red-500 justify-end duration-300'}
+        className={`${modeAuto == 0 ? 'bg-slate-300 justify-start duration-300' : 'bg-red-600 justify-end duration-300'}
           shadow-slate-400 shadow-lg min-w-32 min-h-14 rounded-full bg-slate-400 transition-all duration-300 flex items-center`}
         onClick={handleAuto}
       >
         {modeAuto == 1 ? <span className="font-Poppins font-medium text-xl p-3 text-gray-200">On</span> : <span></span>}
-        <div className={`${modeAuto == 1 ? 'shadow shadow-slate-200' : 'shadow shadow-slate-500'} transition-all duration-300 w-14 h-14 bg-white rounded-full shadow-md m-1`}></div>
+        <div className={`${modeAuto == 1 ? 'shadow shadow-slate-500' : 'shadow shadow-slate-500'} transition-all duration-300 w-14 h-14 bg-white rounded-full shadow-md m-1`}></div>
         {modeAuto == 0 ? <span className="inline-block align-middle font-Poppins font-medium text-xl p-3 text-gray-600">Off</span> : <span></span>}
       </button>
     </div>

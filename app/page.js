@@ -55,7 +55,7 @@ export default function Home() {
       <div className="w-full flex justify-center">
         <button
           className={`${
-            servo === 0 ? 'bg-red-500 border-dark border-4' : 'bg-slate-400 border-slate-600 border-4'
+            servo === 0 ? 'bg-red-600 border-dark border-4' : 'bg-slate-400 border-slate-600 border-4'
           } min-w-32 font-Poppins dark:shadow-slate-700 font-bold  text-light aspect-square rounded-full shadow-slate-600 shadow-lg hover:shadow-xl hover:shadow-slate-300 hover:scale-105 hover:duration-300 transform transition-all ease-in-out duration-300 active:scale-95`}
           onClick={handleServo}
         >
