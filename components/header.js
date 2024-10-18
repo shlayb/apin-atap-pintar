@@ -42,6 +42,16 @@ function Header() {
                 <a href="/#Day1" className="px-2 py-4 text-lg font-semibold transition duration-300 dark:text-light  hover:text-gray-900">
                   Control
                 </a>
+                <a
+                  onClick={() => {
+                    localStorage.setItem('isLogin', 'false');
+                    window.location.reload();
+                  }}
+                  href="/#Day1"
+                  className="px-2 py-4 text-lg font-semibold transition duration-300 dark:text-light  hover:text-gray-900"
+                >
+                  Log out
+                </a>
               </div>
               <div id="mobile-menu" className="flex items-center dark:text-light md:hidden">
                 <div className="px-3">
